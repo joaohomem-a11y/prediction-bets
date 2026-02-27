@@ -1,0 +1,11 @@
+{"t":0,"agent":"system","event":"skill_invoked","skill_name":"superpowers:brainstorming"}
+{"t":0,"agent":"a8e3269","agent_type":"voltagent-research:market-researcher","event":"agent_start","parent_mode":"none"}
+{"t":0,"agent":"ac32329","agent_type":"voltagent-research:competitive-analyst","event":"agent_start","parent_mode":"none"}
+{"t":0,"agent":"ac32329","agent_type":"voltagent-research:competitive-analyst","event":"agent_stop","success":true,"duration_ms":59384}
+{"t":0,"agent":"a8e3269","agent_type":"voltagent-research:market-researcher","event":"agent_stop","success":true,"duration_ms":108709}
+{"t":0,"agent":"a1c4d88","agent_type":"unknown","event":"agent_stop","success":true}
+{"t":0,"agent":"a86ac14","agent_type":"unknown","event":"agent_stop","success":true}
+{"t":0,"agent":"a5734c3","agent_type":"unknown","event":"agent_stop","success":true}
+{"t":0,"agent":"system","event":"skill_invoked","skill_name":"superpowers:writing-plans"}
+{"t":0,"agent":"a5bc722","agent_type":"unknown","event":"agent_stop","success":true}
+{"t":0,"agent":"system","event":"skill_invoked","skill_name":"superpowers:subagent-driven-development"}

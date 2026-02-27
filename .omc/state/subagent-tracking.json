@@ -1,0 +1,26 @@
+{
+  "agents": [
+    {
+      "agent_id": "a8e32697dd53804e5",
+      "agent_type": "voltagent-research:market-researcher",
+      "started_at": "2026-02-27T18:40:40.489Z",
+      "parent_mode": "none",
+      "status": "completed",
+      "completed_at": "2026-02-27T18:42:29.198Z",
+      "duration_ms": 108709
+    },
+    {
+      "agent_id": "ac32329b2f50ca82c",
+      "agent_type": "voltagent-research:competitive-analyst",
+      "started_at": "2026-02-27T18:40:46.955Z",
+      "parent_mode": "none",
+      "status": "completed",
+      "completed_at": "2026-02-27T18:41:46.339Z",
+      "duration_ms": 59384
+    }
+  ],
+  "total_spawned": 2,
+  "total_completed": 2,
+  "total_failed": 0,
+  "last_updated": "2026-02-27T19:08:11.373Z"
+}
