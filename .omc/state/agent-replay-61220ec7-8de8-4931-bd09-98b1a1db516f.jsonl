@@ -9,3 +9,6 @@
 {"t":0,"agent":"system","event":"skill_invoked","skill_name":"superpowers:writing-plans"}
 {"t":0,"agent":"a5bc722","agent_type":"unknown","event":"agent_stop","success":true}
 {"t":0,"agent":"system","event":"skill_invoked","skill_name":"superpowers:subagent-driven-development"}
+{"t":0,"agent":"a441f2a","agent_type":"voltagent-lang:nextjs-developer","event":"agent_start","parent_mode":"none"}
+{"t":0,"agent":"a441f2a","agent_type":"voltagent-lang:nextjs-developer","event":"agent_stop","success":true,"duration_ms":368581}
+{"t":0,"agent":"afc7cd3","agent_type":"voltagent-lang:nextjs-developer","event":"agent_start","parent_mode":"none"}

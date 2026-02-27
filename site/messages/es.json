@@ -1,0 +1,68 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "trending": "Tendencias",
+    "politics": "Politica",
+    "crypto": "Crypto",
+    "aiTech": "IA & Tech",
+    "sports": "Deportes",
+    "markets": "Mercados",
+    "culture": "Cultura",
+    "geopolitics": "Geopolitica",
+    "community": "Comunidad",
+    "about": "Acerca de",
+    "newsletter": "Newsletter",
+    "signIn": "Iniciar Sesion",
+    "joinTribe": "Unete a la Tribu"
+  },
+  "home": {
+    "hero": "La realidad vence a la opinion. Los mercados revelan la verdad.",
+    "subtitle": "El epicentro cultural de los mercados de prediccion.",
+    "trending": "Tendencias",
+    "featured": "Destacado",
+    "latest": "Ultima Signal",
+    "readMore": "Leer mas",
+    "joinCta": "Unete a la tribu. Ve la signal.",
+    "newsletterCta": "Recibe el briefing diario de signal."
+  },
+  "article": {
+    "by": "Por",
+    "readTime": "{minutes} min de lectura",
+    "related": "Signal Relacionada",
+    "share": "Comparte esta signal",
+    "joinDiscussion": "Unete a la discusion"
+  },
+  "community": {
+    "title": "La Tribu",
+    "subtitle": "Donde las predicciones encuentran responsabilidad.",
+    "newThread": "Soltar Signal",
+    "reply": "Responder",
+    "upvote": "Signal",
+    "sections": {
+      "signalDrop": "Signal Drop",
+      "contrarianTakes": "Takes Contrarios",
+      "predictionBattles": "Batallas de Prediccion",
+      "realityCheck": "Reality Check",
+      "edgeLab": "Edge Lab",
+      "offMarket": "Off-Market"
+    }
+  },
+  "about": {
+    "title": "El Movimiento",
+    "creed": "Nuestro Credo",
+    "story": "Historia de Creacion",
+    "words": "Palabras Sagradas"
+  },
+  "auth": {
+    "signIn": "Iniciar Sesion",
+    "signUp": "Unete a la Tribu",
+    "email": "Correo",
+    "password": "Contrasena",
+    "orContinueWith": "O continua con",
+    "verifyEmail": "Revisa tu correo para verificar tu cuenta."
+  },
+  "footer": {
+    "tagline": "La realidad vence a la opinion. Los mercados revelan la verdad.",
+    "rights": "Todos los derechos reservados."
+  }
+}

@@ -17,10 +17,26 @@
       "status": "completed",
       "completed_at": "2026-02-27T18:41:46.339Z",
       "duration_ms": 59384
+    },
+    {
+      "agent_id": "a441f2a6cd4f0b3ee",
+      "agent_type": "voltagent-lang:nextjs-developer",
+      "started_at": "2026-02-27T19:18:31.361Z",
+      "parent_mode": "none",
+      "status": "completed",
+      "completed_at": "2026-02-27T19:24:39.942Z",
+      "duration_ms": 368581
+    },
+    {
+      "agent_id": "afc7cd39495c2b05e",
+      "agent_type": "voltagent-lang:nextjs-developer",
+      "started_at": "2026-02-27T19:27:19.321Z",
+      "parent_mode": "none",
+      "status": "running"
     }
   ],
-  "total_spawned": 2,
-  "total_completed": 2,
+  "total_spawned": 4,
+  "total_completed": 3,
   "total_failed": 0,
-  "last_updated": "2026-02-27T19:08:11.373Z"
+  "last_updated": "2026-02-27T19:27:19.424Z"
 }

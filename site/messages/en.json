@@ -1,0 +1,68 @@
+{
+  "nav": {
+    "home": "Home",
+    "trending": "Trending",
+    "politics": "Politics",
+    "crypto": "Crypto",
+    "aiTech": "AI & Tech",
+    "sports": "Sports",
+    "markets": "Markets",
+    "culture": "Culture",
+    "geopolitics": "Geopolitics",
+    "community": "Community",
+    "about": "About",
+    "newsletter": "Newsletter",
+    "signIn": "Sign In",
+    "joinTribe": "Join the Tribe"
+  },
+  "home": {
+    "hero": "Reality beats opinion. Markets reveal truth.",
+    "subtitle": "The cultural center of prediction markets.",
+    "trending": "Trending",
+    "featured": "Featured",
+    "latest": "Latest Signal",
+    "readMore": "Read more",
+    "joinCta": "Join the tribe. See the signal.",
+    "newsletterCta": "Get the daily signal briefing."
+  },
+  "article": {
+    "by": "By",
+    "readTime": "{minutes} min read",
+    "related": "Related Signal",
+    "share": "Share this signal",
+    "joinDiscussion": "Join the discussion"
+  },
+  "community": {
+    "title": "The Tribe",
+    "subtitle": "Where predictions meet accountability.",
+    "newThread": "Drop Signal",
+    "reply": "Reply",
+    "upvote": "Signal",
+    "sections": {
+      "signalDrop": "Signal Drop",
+      "contrarianTakes": "Contrarian Takes",
+      "predictionBattles": "Prediction Battles",
+      "realityCheck": "Reality Check",
+      "edgeLab": "Edge Lab",
+      "offMarket": "Off-Market"
+    }
+  },
+  "about": {
+    "title": "The Movement",
+    "creed": "Our Creed",
+    "story": "Creation Story",
+    "words": "Sacred Words"
+  },
+  "auth": {
+    "signIn": "Sign In",
+    "signUp": "Join the Tribe",
+    "email": "Email",
+    "password": "Password",
+    "orContinueWith": "Or continue with",
+    "verifyEmail": "Check your email to verify your account."
+  },
+  "footer": {
+    "tagline": "Reality beats opinion. Markets reveal truth.",
+    "rights": "All rights reserved."
+  }
+}

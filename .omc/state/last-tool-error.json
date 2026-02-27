@@ -1,7 +1,7 @@
 {
-  "tool_name": "Read",
-  "tool_input_preview": "{\"file_path\":\"/Users/macbookjoaohomem/Documents/VSCode_Projects/prediction_bets\"}",
-  "error": "EISDIR: illegal operation on a directory, read '/Users/macbookjoaohomem/Documents/VSCode_Projects/prediction_bets'",
-  "timestamp": "2026-02-27T18:40:57.094Z",
+  "tool_name": "Bash",
+  "tool_input_preview": "{\"command\":\"cd /Users/macbookjoaohomem/Documents/VSCode_Projects/prediction_bets/site && npm install next-intl@^3.25 gray-matter remark remark-html @tailwindcss/typography 2>&1\",\"timeout\":120000,\"desc...",
+  "error": "Exit code 1\nnpm error code ERESOLVE\nnpm error ERESOLVE unable to resolve dependency tree\nnpm error\nnpm error While resolving: site@0.1.0\nnpm error Found: next@16.1.6\nnpm error node_modules/next\nnpm error   next@\"16.1.6\" from the root project\nnpm error\nnpm error Could not resolve dependency:\nnpm error peer next@\"^10.0.0 || ^11.0.0 || ^12.0.0 || ^13.0.0 || ^14.0.0 || ^15.0.0\" from next-intl@3.26.5\nnpm error node_modules/next-intl\nnpm error   next-intl@\"^3.25\" from the root project\nnpm error\nnpm er...",
+  "timestamp": "2026-02-27T19:24:38.585Z",
   "retry_count": 1
 }

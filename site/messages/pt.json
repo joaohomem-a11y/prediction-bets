@@ -1,0 +1,68 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "trending": "Em Alta",
+    "politics": "Politica",
+    "crypto": "Crypto",
+    "aiTech": "IA & Tech",
+    "sports": "Esportes",
+    "markets": "Mercados",
+    "culture": "Cultura",
+    "geopolitics": "Geopolitica",
+    "community": "Comunidade",
+    "about": "Sobre",
+    "newsletter": "Newsletter",
+    "signIn": "Entrar",
+    "joinTribe": "Entre na Tribo"
+  },
+  "home": {
+    "hero": "Realidade vence opiniao. Mercados revelam verdade.",
+    "subtitle": "O epicentro cultural dos mercados de previsao.",
+    "trending": "Em Alta",
+    "featured": "Destaque",
+    "latest": "Ultimo Signal",
+    "readMore": "Leia mais",
+    "joinCta": "Entre na tribo. Veja o signal.",
+    "newsletterCta": "Receba o briefing diario de signal."
+  },
+  "article": {
+    "by": "Por",
+    "readTime": "{minutes} min de leitura",
+    "related": "Signal Relacionado",
+    "share": "Compartilhe este signal",
+    "joinDiscussion": "Entre na discussao"
+  },
+  "community": {
+    "title": "A Tribo",
+    "subtitle": "Onde previsoes encontram responsabilidade.",
+    "newThread": "Dropar Signal",
+    "reply": "Responder",
+    "upvote": "Signal",
+    "sections": {
+      "signalDrop": "Signal Drop",
+      "contrarianTakes": "Takes Contrarios",
+      "predictionBattles": "Batalhas de Previsao",
+      "realityCheck": "Reality Check",
+      "edgeLab": "Edge Lab",
+      "offMarket": "Off-Market"
+    }
+  },
+  "about": {
+    "title": "O Movimento",
+    "creed": "Nosso Credo",
+    "story": "Historia de Criacao",
+    "words": "Palavras Sagradas"
+  },
+  "auth": {
+    "signIn": "Entrar",
+    "signUp": "Junte-se a Tribo",
+    "email": "Email",
+    "password": "Senha",
+    "orContinueWith": "Ou continue com",
+    "verifyEmail": "Verifique seu email para confirmar sua conta."
+  },
+  "footer": {
+    "tagline": "Realidade vence opiniao. Mercados revelam verdade.",
+    "rights": "Todos os direitos reservados."
+  }
+}
