@@ -1,0 +1,119 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id            String    @id @default(cuid())
+  name          String?
+  email         String    @unique
+  emailVerified DateTime?
+  image         String?
+  password      String?
+  provider      String?
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+
+  accounts Account[]
+  sessions Session[]
+  threads  Thread[]
+  replies  Reply[]
+  votes    Vote[]
+}
+
+model Account {
+  id                String  @id @default(cuid())
+  userId            String
+  type              String
+  provider          String
+  providerAccountId String
+  refresh_token     String?
+  access_token      String?
+  expires_at        Int?
+  token_type        String?
+  scope             String?
+  id_token          String?
+  session_state     String?
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([provider, providerAccountId])
+}
+
+model Session {
+  id           String   @id @default(cuid())
+  sessionToken String   @unique
+  userId       String
+  expires      DateTime
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model VerificationToken {
+  identifier String
+  token      String   @unique
+  expires    DateTime
+
+  @@unique([identifier, token])
+}
+
+model Thread {
+  id        String   @id @default(cuid())
+  title     String
+  body      String
+  section   String
+  isPinned  Boolean  @default(false)
+  upvotes   Int      @default(0)
+  downvotes Int      @default(0)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  authorId String
+  author   User    @relation(fields: [authorId], references: [id], onDelete: Cascade)
+  replies  Reply[]
+  votes    Vote[]
+
+  @@index([section, createdAt])
+  @@index([authorId])
+}
+
+model Reply {
+  id        String   @id @default(cuid())
+  body      String
+  upvotes   Int      @default(0)
+  downvotes Int      @default(0)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  authorId      String
+  author        User    @relation(fields: [authorId], references: [id], onDelete: Cascade)
+  threadId      String
+  thread        Thread  @relation(fields: [threadId], references: [id], onDelete: Cascade)
+  parentReplyId String?
+  parentReply   Reply?  @relation("ReplyToReply", fields: [parentReplyId], references: [id])
+  childReplies  Reply[] @relation("ReplyToReply")
+  votes         Vote[]
+
+  @@index([threadId, createdAt])
+  @@index([authorId])
+}
+
+model Vote {
+  id         String   @id @default(cuid())
+  value      Int
+  createdAt  DateTime @default(now())
+
+  userId   String
+  user     User    @relation(fields: [userId], references: [id], onDelete: Cascade)
+  threadId String?
+  thread   Thread? @relation(fields: [threadId], references: [id], onDelete: Cascade)
+  replyId  String?
+  reply    Reply?  @relation(fields: [replyId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, threadId])
+  @@unique([userId, replyId])
+}
