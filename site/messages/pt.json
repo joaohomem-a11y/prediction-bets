@@ -23,7 +23,9 @@
     "latest": "Ultimo Signal",
     "readMore": "Leia mais",
     "joinCta": "Entre na tribo. Veja o signal.",
-    "newsletterCta": "Receba o briefing diario de signal."
+    "newsletterCta": "Receba o briefing diario de signal.",
+    "emptyState": "Nenhum artigo ainda. Volte em breve.",
+    "getSignal": "Receber Signal"
   },
   "article": {
     "by": "Por",

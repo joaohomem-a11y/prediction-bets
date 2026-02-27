@@ -112,3 +112,12 @@ body {
 .btn-secondary:hover {
   background-color: var(--color-pb-bg-surface-hover);
 }
+
+/* Hide scrollbar */
+.scrollbar-none {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}

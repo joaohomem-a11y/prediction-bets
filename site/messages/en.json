@@ -23,7 +23,9 @@
     "latest": "Latest Signal",
     "readMore": "Read more",
     "joinCta": "Join the tribe. See the signal.",
-    "newsletterCta": "Get the daily signal briefing."
+    "newsletterCta": "Get the daily signal briefing.",
+    "emptyState": "No articles yet. Check back soon.",
+    "getSignal": "Get Signal"
   },
   "article": {
     "by": "By",

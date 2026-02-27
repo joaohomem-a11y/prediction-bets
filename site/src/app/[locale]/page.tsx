@@ -1,17 +1,17 @@
 import { getTranslations } from "next-intl/server";
 import ArticleCard from "@/components/ArticleCard";
-import { getAllArticles, getFeaturedArticles } from "@/lib/articles";
-import type { Category } from "@/types/article";
+import { getAllArticles } from "@/lib/articles";
+import { Link } from "@/i18n/navigation";
 
-const CATEGORIES: { key: string; value: Category }[] = [
-  { key: "politics", value: "politics" },
-  { key: "crypto", value: "crypto" },
-  { key: "aiTech", value: "ai-tech" },
-  { key: "sports", value: "sports" },
-  { key: "markets", value: "markets" },
-  { key: "culture", value: "culture" },
-  { key: "geopolitics", value: "geopolitics" },
-];
+const CATEGORIES = [
+  { key: "politics", href: "/category/politics" },
+  { key: "crypto", href: "/category/crypto" },
+  { key: "aiTech", href: "/category/ai-tech" },
+  { key: "sports", href: "/category/sports" },
+  { key: "markets", href: "/category/markets" },
+  { key: "culture", href: "/category/culture" },
+  { key: "geopolitics", href: "/category/geopolitics" },
+] as const;
 
 export default async function HomePage({
   params,
@@ -23,9 +23,8 @@ export default async function HomePage({
   const tNav = await getTranslations({ locale, namespace: "nav" });
 
   const allArticles = await getAllArticles(locale);
-  const featuredArticles = await getFeaturedArticles(locale);
-
-  const heroArticle = featuredArticles[0] ?? allArticles[0] ?? null;
+  const heroArticle =
+    allArticles.find((a) => a.featured) ?? allArticles[0] ?? null;
   const gridArticles = allArticles.filter(
     (a) => a.slug !== heroArticle?.slug
   );
@@ -43,7 +42,7 @@ export default async function HomePage({
               {t("subtitle")}
             </p>
             <p className="mt-4 text-pb-text-muted">
-              No articles yet. Check back soon.
+              {t("emptyState")}
             </p>
           </div>
         </div>
@@ -53,7 +52,7 @@ export default async function HomePage({
 
   return (
     <main className="min-h-screen">
-      {/* ── Compact Tagline Bar ── */}
+      {/* -- Compact Tagline Bar -- */}
       <section className="border-b border-white/5">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
           <p className="text-sm sm:text-base font-mono text-pb-accent-blue tracking-wide">
@@ -62,36 +61,42 @@ export default async function HomePage({
         </div>
       </section>
 
-      {/* ── Featured Article (Hero Card) ── */}
+      {/* -- Featured Article (Hero Card) -- */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6 pb-8">
         <ArticleCard article={heroArticle} featured />
       </section>
 
-      {/* ── Category Filter Tabs ── */}
-      <section className="border-y border-white/5">
+      {/* -- Category Filter Tabs -- */}
+      <nav className="border-y border-white/5" aria-label="Category filters">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center gap-2 py-3 overflow-x-auto scrollbar-none">
-            {/* Trending tab — active by default */}
-            <span
-              className="flex-shrink-0 px-4 py-1.5 rounded-full text-sm font-medium cursor-pointer bg-pb-accent-blue/10 text-pb-accent-blue"
+          <div className="flex items-center gap-2 py-3 overflow-x-auto scrollbar-none" role="tablist">
+            {/* Trending tab -- active by default */}
+            <Link
+              href="/"
+              role="tab"
+              aria-selected="true"
+              className="flex-shrink-0 px-4 py-1.5 rounded-full text-sm font-medium bg-pb-accent-blue/10 text-pb-accent-blue"
             >
               {tNav("trending")}
-            </span>
+            </Link>
 
             {/* Category tabs */}
-            {CATEGORIES.map(({ key }) => (
-              <span
+            {CATEGORIES.map(({ key, href }) => (
+              <Link
                 key={key}
-                className="flex-shrink-0 px-4 py-1.5 rounded-full text-sm font-medium cursor-pointer bg-pb-bg-surface text-pb-text-secondary hover:bg-pb-bg-surface-hover hover:text-pb-text-primary transition-colors"
+                href={href}
+                role="tab"
+                aria-selected="false"
+                className="flex-shrink-0 px-4 py-1.5 rounded-full text-sm font-medium bg-pb-bg-surface text-pb-text-secondary hover:bg-pb-bg-surface-hover hover:text-pb-text-primary transition-colors"
               >
                 {tNav(key)}
-              </span>
+              </Link>
             ))}
           </div>
         </div>
-      </section>
+      </nav>
 
-      {/* ── Article Grid ── */}
+      {/* -- Article Grid -- */}
       {gridArticles.length > 0 && (
         <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
           <h2 className="text-lg font-semibold text-pb-text-primary mb-6">
@@ -105,7 +110,7 @@ export default async function HomePage({
         </section>
       )}
 
-      {/* ── Newsletter CTA ── */}
+      {/* -- Newsletter CTA -- */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16 pt-6">
         <div className="card p-8 sm:p-12 text-center">
           <h2 className="text-2xl sm:text-3xl font-bold text-pb-text-primary mb-2">
@@ -115,17 +120,20 @@ export default async function HomePage({
             {t("newsletterCta")}
           </p>
           <form
-            action="#"
+            method="POST"
+            action="/api/newsletter"
             className="flex flex-col sm:flex-row items-center justify-center gap-3 max-w-md mx-auto"
           >
             <input
               type="email"
+              name="email"
+              required
               placeholder="you@example.com"
               className="w-full sm:flex-1 px-4 py-3 rounded-lg bg-pb-bg-primary border border-white/10 text-pb-text-primary placeholder:text-pb-text-muted focus:outline-none focus:border-pb-accent-blue transition-colors"
               aria-label="Email address"
             />
             <button type="submit" className="btn-primary whitespace-nowrap">
-              Get Signal
+              {t("getSignal")}
             </button>
           </form>
         </div>
