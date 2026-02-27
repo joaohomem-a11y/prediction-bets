@@ -66,10 +66,12 @@ class ImageSourcer:
 
     Works without an API key by falling back to category-specific
     default images. Never raises exceptions — always returns a usable image.
+    Tracks used images within a pipeline run to avoid duplicates.
     """
 
     def __init__(self) -> None:
         self._access_key = UNSPLASH_ACCESS_KEY
+        self._used_urls: set[str] = set()
 
     def get_image(self, category: str) -> dict[str, str]:
         """
@@ -132,8 +134,13 @@ class ImageSourcer:
         if not results:
             raise ValueError(f"No Unsplash results for query: '{query}'")
 
-        # Pick a random result from the top 5 for variety
-        photo = random.choice(results[: min(5, len(results))])
+        # Filter out already-used images, then pick randomly
+        unused = [
+            r for r in results
+            if r["urls"]["regular"].split("?")[0] not in self._used_urls
+        ]
+        pool = unused if unused else results
+        photo = random.choice(pool)
         url = photo["urls"]["regular"]
         photographer = photo["user"]["name"]
         description = (
@@ -145,6 +152,9 @@ class ImageSourcer:
         # Format URL with standard dimensions
         base_url = url.split("?")[0]
         formatted_url = f"{base_url}?w=1200&q=80&fit=crop"
+
+        # Track to avoid reuse in this pipeline run
+        self._used_urls.add(base_url)
 
         caption = f"{description.capitalize()} — Photo by {photographer} on Unsplash"
 

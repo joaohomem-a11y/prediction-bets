@@ -11,7 +11,7 @@ tags:
 - prediction-markets
 - gambling
 - crypto
-image: https://images.unsplash.com/photo-1716279083224-d366e6d4144d?w=1200&q=80&fit=crop
+image: https://images.unsplash.com/photo-1694217363951-f922ec85f7e2?w=1200&q=80&fit=crop
 imageCaption: Crypto trader investor analyst businessman using mobile phone app analytics
   for cryptocurrency financial market analysis, chart graph index on smartphone. hands
   holding phone and cup of coffee. — Photo by TabTrader.com on Unsplash

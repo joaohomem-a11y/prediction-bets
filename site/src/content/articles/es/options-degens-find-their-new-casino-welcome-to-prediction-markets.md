@@ -11,7 +11,7 @@ tags:
 - wall street
 - trading
 - risk
-image: https://images.unsplash.com/photo-1716279083224-d366e6d4144d?w=1200&q=80&fit=crop
+image: https://images.unsplash.com/photo-1734856080638-71e78b3d8d5f?w=1200&q=80&fit=crop
 imageCaption: Crypto trader investor analyst businessman using mobile phone app analytics
   for cryptocurrency financial market analysis, chart graph index on smartphone. hands
   holding phone and cup of coffee. — Photo by TabTrader.com on Unsplash

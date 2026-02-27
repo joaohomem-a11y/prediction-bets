@@ -6,7 +6,7 @@ author: "Consensus Crusher"
 authorSlug: "consensus-crusher"
 category: "markets"
 tags: ["fed", "interest-rates", "markets", "bonds"]
-image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=1200&q=80&fit=crop"
+image: "https://images.unsplash.com/photo-1728044849347-ea6ff59d98dd?w=1200&q=80&fit=crop"
 imageCaption: "The rate market doesn't care about your feelings. Or your portfolio."
 excerpt: "Your portfolio manager charges 1% to guess what the Fed will do. The prediction market gives you the answer for free — and it's more accurate. Time to fire someone."
 contentType: "analysis"

@@ -11,7 +11,7 @@ tags:
 - market dynamics
 - forecasting
 - truth
-image: https://images.unsplash.com/photo-1716279083223-006db39251e1?w=1200&q=80&fit=crop
+image: https://images.unsplash.com/photo-1738736637589-5d8007bedbbc?w=1200&q=80&fit=crop
 imageCaption: Crypto trader investor analyst businessman using mobile phone app analytics
   for cryptocurrency financial market analysis, chart graph index on smartphone. hands
   holding phone. — Photo by TabTrader.com on Unsplash
