@@ -57,6 +57,25 @@ export default async function ArticlePage({ params }: Props) {
 
   return (
     <div className="min-h-screen">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Article",
+            headline: article.title,
+            description: article.excerpt,
+            image: article.image,
+            datePublished: article.date,
+            author: { "@type": "Person", name: article.author },
+            publisher: {
+              "@type": "Organization",
+              name: "Prediction Bets",
+              url: "https://predictionbets.com",
+            },
+          }),
+        }}
+      />
       <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
         {/* Header */}
         <header className="mb-8">
