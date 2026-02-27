@@ -25,7 +25,8 @@
     "joinCta": "Unete a la tribu. Ve la signal.",
     "newsletterCta": "Recibe el briefing diario de signal.",
     "emptyState": "No hay articulos aun. Vuelve pronto.",
-    "getSignal": "Recibir Signal"
+    "getSignal": "Recibir Signal",
+    "trendingMarkets": "Mercados en Tendencia"
   },
   "article": {
     "by": "Por",

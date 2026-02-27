@@ -25,7 +25,8 @@
     "joinCta": "Join the tribe. See the signal.",
     "newsletterCta": "Get the daily signal briefing.",
     "emptyState": "No articles yet. Check back soon.",
-    "getSignal": "Get Signal"
+    "getSignal": "Get Signal",
+    "trendingMarkets": "Trending Markets"
   },
   "article": {
     "by": "By",

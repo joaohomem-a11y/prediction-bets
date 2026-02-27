@@ -1,5 +1,6 @@
 import { getTranslations } from "next-intl/server";
 import ArticleCard from "@/components/ArticleCard";
+import MarketsHero from "@/components/MarketsHero";
 import { getAllArticles } from "@/lib/articles";
 import { Link } from "@/i18n/navigation";
 import Logo from "@/components/Logo";
@@ -60,9 +61,18 @@ export default async function HomePage({
         </div>
       </section>
 
-      {/* -- Featured Article (Hero Card) -- */}
+      {/* -- Hero: Featured Article + Markets Side by Side -- */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6 pb-8">
-        <ArticleCard article={heroArticle} featured />
+        <div className="grid grid-cols-1 lg:grid-cols-5 gap-6">
+          {/* Featured article — takes 3/5 on desktop */}
+          <div className="lg:col-span-3">
+            <ArticleCard article={heroArticle} featured />
+          </div>
+          {/* Polymarket-style markets — takes 2/5 on desktop */}
+          <div className="lg:col-span-2">
+            <MarketsHero locale={locale} />
+          </div>
+        </div>
       </section>
 
       {/* -- Category Filter Tabs -- */}
