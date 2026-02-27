@@ -63,9 +63,9 @@ export default async function HomePage({
 
       {/* -- Hero: Featured Article + Markets Side by Side -- */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6 pb-8">
-        <div className="grid grid-cols-1 lg:grid-cols-5 gap-6">
+        <div className="grid grid-cols-1 lg:grid-cols-5 gap-6 items-stretch">
           {/* Featured article — takes 3/5 on desktop */}
-          <div className="lg:col-span-3">
+          <div className="lg:col-span-3 min-h-0">
             <ArticleCard article={heroArticle} featured />
           </div>
           {/* Polymarket-style markets — takes 2/5 on desktop */}

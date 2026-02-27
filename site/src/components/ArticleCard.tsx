@@ -9,12 +9,12 @@ interface ArticleCardProps {
 
 export default function ArticleCard({ article, featured = false }: ArticleCardProps) {
   return (
-    <Link href={`/article/${article.slug}`} className="group block">
-      <article className={`card overflow-hidden ${featured ? "lg:flex" : ""}`}>
+    <Link href={`/article/${article.slug}`} className={`group block ${featured ? "h-full" : ""}`}>
+      <article className={`card overflow-hidden ${featured ? "flex flex-col h-full" : ""}`}>
         {/* Image */}
         <div
           className={`relative overflow-hidden ${
-            featured ? "lg:w-1/2 aspect-[16/9] lg:aspect-auto lg:min-h-[320px]" : "aspect-[16/9]"
+            featured ? "flex-1 min-h-[220px]" : "aspect-[16/9]"
           }`}
         >
           <img
@@ -30,22 +30,22 @@ export default function ArticleCard({ article, featured = false }: ArticleCardPr
         </div>
 
         {/* Content */}
-        <div className={`p-5 ${featured ? "lg:w-1/2 lg:p-8 lg:flex lg:flex-col lg:justify-center" : ""}`}>
+        <div className={`p-5 ${featured ? "p-6" : ""}`}>
           <h3
             className={`font-bold text-pb-text-primary group-hover:text-pb-accent-blue transition-colors line-clamp-2 ${
-              featured ? "text-2xl lg:text-3xl" : "text-lg"
+              featured ? "text-xl lg:text-2xl" : "text-lg"
             }`}
           >
             {article.title}
           </h3>
 
           {article.subtitle && featured && (
-            <p className="mt-2 text-pb-text-secondary text-sm lg:text-base line-clamp-2">
+            <p className="mt-2 text-pb-text-secondary text-sm line-clamp-2">
               {article.subtitle}
             </p>
           )}
 
-          <p className={`mt-2 text-pb-text-muted text-sm line-clamp-2 ${featured ? "lg:line-clamp-3" : ""}`}>
+          <p className={`mt-2 text-pb-text-muted text-sm line-clamp-2 ${featured ? "line-clamp-3" : ""}`}>
             {article.excerpt}
           </p>
 
