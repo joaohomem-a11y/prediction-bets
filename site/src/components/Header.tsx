@@ -71,7 +71,7 @@ export default function Header() {
               </Link>
               <LanguageSwitcher />
               <Link
-                href="/auth/signup"
+                href="/auth/signin"
                 className="btn-primary text-sm px-4 py-2"
               >
                 {t("joinTribe")}

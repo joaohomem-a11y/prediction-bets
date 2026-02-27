@@ -91,7 +91,7 @@ export default function MobileMenu({ onClose }: MobileMenuProps) {
         {/* CTA */}
         <div className="px-4 py-4">
           <Link
-            href="/auth/signup"
+            href="/auth/signin"
             onClick={onClose}
             className="btn-primary w-full text-sm justify-center"
           >
