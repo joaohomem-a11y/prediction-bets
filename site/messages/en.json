@@ -51,9 +51,34 @@
   },
   "about": {
     "title": "The Movement",
+    "subtitle": "We don't predict the future. We trade on it.",
     "creed": "Our Creed",
     "story": "Creation Story",
-    "words": "Sacred Words"
+    "storyText": "Prediction Bets was born because forecasting is broken. People argue endlessly, but markets settle reality. Prediction Bets organizes collective intelligence into a living system.",
+    "words": "Sacred Words",
+    "pagans": "We Stand Against",
+    "pagan1": "Talking heads",
+    "pagan2": "Guesswork without risk",
+    "pagan3": "Clickbait forecasting",
+    "pagan4": "Authority without accountability",
+    "creed1": "Reality is measurable.",
+    "creed2": "Skin in the game matters.",
+    "creed3": "Consensus emerges from incentives.",
+    "creed4": "Prediction is participation, not opinion.",
+    "word_signal": "Signal",
+    "word_signal_def": "Actionable market intelligence",
+    "word_edge": "Edge",
+    "word_edge_def": "Informational advantage over consensus",
+    "word_consensus": "Consensus",
+    "word_consensus_def": "The collective market position",
+    "word_realityCheck": "Reality Check",
+    "word_realityCheck_def": "When markets prove opinions wrong",
+    "word_marketTruth": "Market Truth",
+    "word_marketTruth_def": "Prices as the arbiter of probability",
+    "word_predictionMindset": "Prediction Mindset",
+    "word_predictionMindset_def": "Thinking in probabilities, not certainties",
+    "coreBeliefHeading": "Reality beats opinion. Markets reveal truth.",
+    "joinTribe": "Join the Tribe"
   },
   "auth": {
     "signIn": "Sign In",
@@ -62,6 +87,13 @@
     "password": "Password",
     "orContinueWith": "Or continue with",
     "verifyEmail": "Check your email to verify your account."
+  },
+  "newsletter": {
+    "title": "Get the Signal",
+    "subtitle": "The daily briefing for prediction market insiders.",
+    "placeholder": "you@example.com",
+    "submit": "Subscribe",
+    "socialProof": "Join thousands of predictors getting the edge."
   },
   "footer": {
     "tagline": "Reality beats opinion. Markets reveal truth.",

@@ -51,9 +51,34 @@
   },
   "about": {
     "title": "El Movimiento",
+    "subtitle": "No predecimos el futuro. Operamos en el.",
     "creed": "Nuestro Credo",
     "story": "Historia de Creacion",
-    "words": "Palabras Sagradas"
+    "storyText": "Prediction Bets nacio porque el pronostico esta roto. La gente discute sin parar, pero los mercados resuelven la realidad. Prediction Bets organiza la inteligencia colectiva en un sistema vivo.",
+    "words": "Palabras Sagradas",
+    "pagans": "Estamos Contra",
+    "pagan1": "Comentaristas de turno",
+    "pagan2": "Especulacion sin riesgo",
+    "pagan3": "Pronosticos clickbait",
+    "pagan4": "Autoridad sin responsabilidad",
+    "creed1": "La realidad es medible.",
+    "creed2": "Skin in the game importa.",
+    "creed3": "El consenso emerge de incentivos.",
+    "creed4": "Prediccion es participacion, no opinion.",
+    "word_signal": "Signal",
+    "word_signal_def": "Inteligencia de mercado accionable",
+    "word_edge": "Edge",
+    "word_edge_def": "Ventaja informacional sobre el consenso",
+    "word_consensus": "Consensus",
+    "word_consensus_def": "La posicion colectiva del mercado",
+    "word_realityCheck": "Reality Check",
+    "word_realityCheck_def": "Cuando los mercados demuestran que las opiniones son erroneas",
+    "word_marketTruth": "Market Truth",
+    "word_marketTruth_def": "Precios como arbitro de probabilidad",
+    "word_predictionMindset": "Prediction Mindset",
+    "word_predictionMindset_def": "Pensar en probabilidades, no en certezas",
+    "coreBeliefHeading": "La realidad vence a la opinion. Los mercados revelan la verdad.",
+    "joinTribe": "Unete a la Tribu"
   },
   "auth": {
     "signIn": "Iniciar Sesion",
@@ -62,6 +87,13 @@
     "password": "Contrasena",
     "orContinueWith": "O continua con",
     "verifyEmail": "Revisa tu correo para verificar tu cuenta."
+  },
+  "newsletter": {
+    "title": "Recibe la Signal",
+    "subtitle": "El briefing diario para insiders de mercados de prediccion.",
+    "placeholder": "tu@ejemplo.com",
+    "submit": "Suscribirse",
+    "socialProof": "Unete a miles de predictores obteniendo el edge."
   },
   "footer": {
     "tagline": "La realidad vence a la opinion. Los mercados revelan la verdad.",

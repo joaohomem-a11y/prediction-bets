@@ -51,9 +51,34 @@
   },
   "about": {
     "title": "O Movimento",
+    "subtitle": "Nao prevemos o futuro. Negociamos nele.",
     "creed": "Nosso Credo",
     "story": "Historia de Criacao",
-    "words": "Palavras Sagradas"
+    "storyText": "Prediction Bets nasceu porque a previsao esta quebrada. Pessoas discutem sem parar, mas os mercados resolvem a realidade. Prediction Bets organiza inteligencia coletiva em um sistema vivo.",
+    "words": "Palavras Sagradas",
+    "pagans": "Somos Contra",
+    "pagan1": "Comentaristas de plantao",
+    "pagan2": "Palpites sem risco",
+    "pagan3": "Previsoes clickbait",
+    "pagan4": "Autoridade sem responsabilidade",
+    "creed1": "Realidade e mensuravel.",
+    "creed2": "Skin in the game importa.",
+    "creed3": "Consenso emerge de incentivos.",
+    "creed4": "Previsao e participacao, nao opiniao.",
+    "word_signal": "Signal",
+    "word_signal_def": "Inteligencia de mercado acionavel",
+    "word_edge": "Edge",
+    "word_edge_def": "Vantagem informacional sobre o consenso",
+    "word_consensus": "Consensus",
+    "word_consensus_def": "A posicao coletiva do mercado",
+    "word_realityCheck": "Reality Check",
+    "word_realityCheck_def": "Quando mercados provam opinioes erradas",
+    "word_marketTruth": "Market Truth",
+    "word_marketTruth_def": "Precos como arbitro de probabilidade",
+    "word_predictionMindset": "Prediction Mindset",
+    "word_predictionMindset_def": "Pensar em probabilidades, nao em certezas",
+    "coreBeliefHeading": "Realidade vence opiniao. Mercados revelam verdade.",
+    "joinTribe": "Entre na Tribo"
   },
   "auth": {
     "signIn": "Entrar",
@@ -62,6 +87,13 @@
     "password": "Senha",
     "orContinueWith": "Ou continue com",
     "verifyEmail": "Verifique seu email para confirmar sua conta."
+  },
+  "newsletter": {
+    "title": "Receba o Signal",
+    "subtitle": "O briefing diario para insiders de mercados de previsao.",
+    "placeholder": "voce@exemplo.com",
+    "submit": "Inscrever-se",
+    "socialProof": "Junte-se a milhares de previsores ganhando o edge."
   },
   "footer": {
     "tagline": "Realidade vence opiniao. Mercados revelam verdade.",
