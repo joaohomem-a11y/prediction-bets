@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 40" fill="none">
+  <defs>
+    <linearGradient id="ball-grad" x1="8" y1="6" x2="32" y2="34" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#2D7FF9"/>
+      <stop offset="100%" stop-color="#7B61FF"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="40%" r="50%">
+      <stop offset="0%" stop-color="#fff" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <!-- Ball -->
+  <circle cx="20" cy="17" r="13" stroke="url(#ball-grad)" stroke-width="2.5" fill="none"/>
+  <circle cx="20" cy="17" r="13" fill="url(#glow)"/>
+  <!-- Lightning bolt -->
+  <path d="M22 8L16 18h5l-3 11 8-13h-5.5L22 8z" fill="#F5A623"/>
+  <!-- Base -->
+  <path d="M12 31c0-1 1.5-2.5 8-2.5s8 1.5 8 2.5" stroke="url(#ball-grad)" stroke-width="2.2" stroke-linecap="round" fill="none"/>
+  <line x1="10" y1="34" x2="30" y2="34" stroke="url(#ball-grad)" stroke-width="2.2" stroke-linecap="round"/>
+  <!-- Text -->
+  <text x="46" y="25" font-family="Inter, Arial, sans-serif" font-weight="800" font-size="18" font-style="italic" fill="#FFFFFF" letter-spacing="0.5">PREDICTION</text>
+  <text x="186" y="25" font-family="Inter, Arial, sans-serif" font-weight="800" font-size="18" font-style="italic" fill="#2D7FF9" letter-spacing="0.5">BETS</text>
+</svg>

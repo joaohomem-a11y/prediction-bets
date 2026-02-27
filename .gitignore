@@ -1,0 +1,10 @@
+# Claude Code / OMC state
+.claude/
+.omc/
+
+# OS
+.DS_Store
+
+# env
+.env*
+!.env.example

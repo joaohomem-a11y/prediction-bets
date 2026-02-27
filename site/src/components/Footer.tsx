@@ -2,6 +2,7 @@
 
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
+import Logo from "@/components/Logo";
 
 const SIGNAL_LINKS = [
   { key: "politics", href: "/category/politics" },
@@ -32,11 +33,10 @@ export default function Footer() {
           <div className="sm:col-span-2 flex flex-col gap-4">
             <Link
               href="/"
-              className="inline-flex items-center font-bold text-xl tracking-tight select-none w-fit"
+              className="inline-flex w-fit"
               aria-label="Prediction Bets home"
             >
-              <span className="text-pb-text-primary">PREDICTION</span>
-              <span className="text-pb-accent-blue">BETS</span>
+              <Logo size="sm" />
             </Link>
             <p className="text-pb-text-secondary text-sm leading-relaxed max-w-xs">
               {tFooter("tagline")}

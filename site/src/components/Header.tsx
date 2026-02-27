@@ -5,6 +5,7 @@ import { useTranslations } from "next-intl";
 import { Link, usePathname } from "@/i18n/navigation";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
 import MobileMenu from "@/components/MobileMenu";
+import Logo from "@/components/Logo";
 
 const NAV_LINKS = [
   { key: "trending", href: "/" },
@@ -30,11 +31,10 @@ export default function Header() {
             {/* Logo */}
             <Link
               href="/"
-              className="flex-shrink-0 flex items-center gap-0 font-bold text-lg tracking-tight select-none"
+              className="flex-shrink-0"
               aria-label="Prediction Bets home"
             >
-              <span className="text-pb-text-primary">PREDICTION</span>
-              <span className="text-pb-accent-blue">BETS</span>
+              <Logo size="md" />
             </Link>
 
             {/* Desktop category nav */}

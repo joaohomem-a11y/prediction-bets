@@ -6,6 +6,10 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Prediction Bets",
   description: "The cultural center of prediction markets. Reality beats opinion.",
+  icons: {
+    icon: "/logo-icon.svg",
+    apple: "/logo-icon.svg",
+  },
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {

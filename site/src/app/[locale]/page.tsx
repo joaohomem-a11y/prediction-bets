@@ -2,6 +2,7 @@ import { getTranslations } from "next-intl/server";
 import ArticleCard from "@/components/ArticleCard";
 import { getAllArticles } from "@/lib/articles";
 import { Link } from "@/i18n/navigation";
+import Logo from "@/components/Logo";
 
 const CATEGORIES = [
   { key: "politics", href: "/category/politics" },
@@ -35,9 +36,7 @@ export default async function HomePage({
       <main className="min-h-screen">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
           <div className="flex flex-col items-center justify-center text-center">
-            <h1 className="text-3xl font-bold text-pb-text-primary mb-3">
-              PREDICTION<span className="text-pb-accent-blue">BETS</span>
-            </h1>
+            <Logo size="lg" className="text-3xl mb-3" />
             <p className="text-pb-text-secondary text-lg">
               {t("subtitle")}
             </p>
