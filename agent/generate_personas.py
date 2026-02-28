@@ -106,7 +106,7 @@ def generate_batch(
 
     response = client.messages.create(
         model=CLAUDE_MODEL,
-        max_tokens=8192,
+        max_tokens=16384,
         messages=[{"role": "user", "content": prompt}],
     )
 
@@ -122,7 +122,7 @@ def generate_batch(
 
         response = client.messages.create(
             model=CLAUDE_MODEL,
-            max_tokens=8192,
+            max_tokens=16384,
             messages=[{"role": "user", "content": prompt}],
         )
         raw = response.content[0].text
@@ -214,8 +214,8 @@ def main() -> None:
     parser.add_argument(
         "--batch-size",
         type=int,
-        default=50,
-        help="Personas per API call (default: 50)",
+        default=20,
+        help="Personas per API call (default: 20)",
     )
     args = parser.parse_args()
 

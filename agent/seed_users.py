@@ -85,6 +85,7 @@ def insert_users(conn, records: list[dict]) -> int:
                 """
                 INSERT INTO "User" (id, name, email, image, role, "createdAt", "updatedAt")
                 VALUES (%(id)s, %(name)s, %(email)s, %(image)s, %(role)s, %(createdAt)s, %(updatedAt)s)
+                ON CONFLICT (email) DO NOTHING
                 """,
                 rec,
             )
