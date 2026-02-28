@@ -286,8 +286,12 @@ def insert_conversation(
     conversation: dict,
     section: str,
     username_to_user_id: dict[str, str],
+    base_time: datetime | None = None,
 ) -> bool:
     """Insert a generated conversation (thread + replies) into the DB.
+
+    If *base_time* is provided it is used as the thread creation time;
+    otherwise a random back-dated time is generated via ``random_backdate()``.
 
     Returns True on success, False on skip/error.
     """
@@ -302,7 +306,7 @@ def insert_conversation(
         return False
 
     thread_id = generate_cuid()
-    thread_created = random_backdate()
+    thread_created = base_time if base_time is not None else random_backdate()
     thread_upvotes = random.randint(3, 80)
     thread_downvotes = random.randint(0, 10)
 
