@@ -3,7 +3,7 @@
 import { useState, useEffect, useCallback } from "react";
 import { useParams } from "next/navigation";
 import { useSession } from "next-auth/react";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { getSectionBySlug } from "@/lib/forum";
 import { timeAgo } from "@/lib/utils";
@@ -42,6 +42,7 @@ export default function ThreadDetailPage() {
   const section = getSectionBySlug(sectionSlug);
   const { data: session } = useSession();
   const t = useTranslations("community");
+  const locale = useLocale();
 
   const [thread, setThread] = useState<ThreadDetail | null>(null);
   const [loading, setLoading] = useState(true);
@@ -49,7 +50,7 @@ export default function ThreadDetailPage() {
 
   const fetchThread = useCallback(async () => {
     try {
-      const res = await fetch(`/api/forum/threads/${threadId}`);
+      const res = await fetch(`/api/forum/threads/${threadId}?locale=${locale}`);
       if (res.ok) {
         const data = await res.json();
         setThread(data);
@@ -59,7 +60,7 @@ export default function ThreadDetailPage() {
     } finally {
       setLoading(false);
     }
-  }, [threadId]);
+  }, [threadId, locale]);
 
   useEffect(() => {
     fetchThread();

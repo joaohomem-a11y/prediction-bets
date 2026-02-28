@@ -2,6 +2,7 @@ import { NextRequest } from "next/server";
 import { getServerSession } from "next-auth";
 import { authOptions } from "@/lib/auth";
 import { prisma } from "@/lib/prisma";
+import { translateThread } from "@/lib/translate";
 
 const VALID_SECTIONS = [
   "signal-drop",
@@ -18,6 +19,7 @@ export async function GET(request: NextRequest) {
   const { searchParams } = request.nextUrl;
   const section = searchParams.get("section");
   const sort = searchParams.get("sort") ?? "new";
+  const locale = searchParams.get("locale") ?? "en";
   const page = Math.max(1, parseInt(searchParams.get("page") ?? "1", 10));
 
   if (!section || !VALID_SECTIONS.includes(section)) {
@@ -53,7 +55,13 @@ export async function GET(request: NextRequest) {
     },
   });
 
-  return Response.json(threads);
+  const translated = threads.map((t) => {
+    const result = translateThread(t, locale);
+    const { translations: _t, ...rest } = result;
+    return rest;
+  });
+
+  return Response.json(translated);
 }
 
 export async function POST(request: NextRequest) {

@@ -63,15 +63,17 @@ model VerificationToken {
 }
 
 model Thread {
-  id        String   @id @default(cuid())
-  title     String
-  body      String
-  section   String
-  isPinned  Boolean  @default(false)
-  upvotes   Int      @default(0)
-  downvotes Int      @default(0)
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
+  id           String   @id @default(cuid())
+  title        String
+  body         String
+  section      String
+  isPinned     Boolean  @default(false)
+  upvotes      Int      @default(0)
+  downvotes    Int      @default(0)
+  locale       String   @default("en")
+  translations Json?
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
 
   authorId String
   author   User    @relation(fields: [authorId], references: [id], onDelete: Cascade)
@@ -83,12 +85,14 @@ model Thread {
 }
 
 model Reply {
-  id        String   @id @default(cuid())
-  body      String
-  upvotes   Int      @default(0)
-  downvotes Int      @default(0)
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
+  id           String   @id @default(cuid())
+  body         String
+  upvotes      Int      @default(0)
+  downvotes    Int      @default(0)
+  locale       String   @default("en")
+  translations Json?
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
 
   authorId      String
   author        User    @relation(fields: [authorId], references: [id], onDelete: Cascade)

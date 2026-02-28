@@ -2,12 +2,14 @@ import { NextRequest } from "next/server";
 import { getServerSession } from "next-auth";
 import { authOptions } from "@/lib/auth";
 import { prisma } from "@/lib/prisma";
+import { translateReply } from "@/lib/translate";
 
 export async function GET(
-  _request: NextRequest,
+  request: NextRequest,
   { params }: { params: Promise<{ id: string }> },
 ) {
   const { id } = await params;
+  const locale = request.nextUrl.searchParams.get("locale") ?? "en";
 
   const replies = await prisma.reply.findMany({
     where: { threadId: id },
@@ -18,7 +20,13 @@ export async function GET(
     orderBy: { createdAt: "asc" },
   });
 
-  return Response.json(replies);
+  const translated = replies.map((r) => {
+    const tr = translateReply(r, locale);
+    const { translations: _t, ...rest } = tr;
+    return rest;
+  });
+
+  return Response.json(translated);
 }
 
 export async function POST(

@@ -3,7 +3,7 @@
 import { useState, useEffect, useCallback } from "react";
 import { useParams } from "next/navigation";
 import { useSession } from "next-auth/react";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { getSectionBySlug } from "@/lib/forum";
 import ThreadCard from "@/components/forum/ThreadCard";
@@ -27,6 +27,7 @@ export default function SectionPage() {
   const section = getSectionBySlug(sectionSlug);
   const { data: session } = useSession();
   const t = useTranslations("community");
+  const locale = useLocale();
 
   const [threads, setThreads] = useState<ThreadData[]>([]);
   const [sort, setSort] = useState<SortOption>("new");
@@ -36,7 +37,7 @@ export default function SectionPage() {
     setLoading(true);
     try {
       const res = await fetch(
-        `/api/forum/threads?section=${sectionSlug}&sort=${sort}`,
+        `/api/forum/threads?section=${sectionSlug}&sort=${sort}&locale=${locale}`,
       );
       if (res.ok) {
         const data = await res.json();
@@ -47,7 +48,7 @@ export default function SectionPage() {
     } finally {
       setLoading(false);
     }
-  }, [sectionSlug, sort]);
+  }, [sectionSlug, sort, locale]);
 
   useEffect(() => {
     fetchThreads();

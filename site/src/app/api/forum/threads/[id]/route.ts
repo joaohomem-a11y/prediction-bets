@@ -1,11 +1,13 @@
 import { NextRequest } from "next/server";
 import { prisma } from "@/lib/prisma";
+import { translateThread, translateReply } from "@/lib/translate";
 
 export async function GET(
-  _request: NextRequest,
+  request: NextRequest,
   { params }: { params: Promise<{ id: string }> },
 ) {
   const { id } = await params;
+  const locale = request.nextUrl.searchParams.get("locale") ?? "en";
 
   const thread = await prisma.thread.findUnique({
     where: { id },
@@ -26,5 +28,13 @@ export async function GET(
     return Response.json({ error: "Thread not found" }, { status: 404 });
   }
 
-  return Response.json(thread);
+  const translatedThread = translateThread(thread, locale);
+  const translatedReplies = thread.replies.map((r) => {
+    const tr = translateReply(r, locale);
+    const { translations: _t, ...rest } = tr;
+    return rest;
+  });
+
+  const { translations: _t, ...threadRest } = translatedThread;
+  return Response.json({ ...threadRest, replies: translatedReplies });
 }
