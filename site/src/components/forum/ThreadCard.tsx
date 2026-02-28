@@ -53,7 +53,14 @@ export default function ThreadCard({ thread, sectionSlug }: Props) {
             ) : (
               <span className="w-4 h-4 rounded-full bg-pb-bg-surface-hover inline-block" />
             )}
-            {thread.author.name ?? "Anonymous"}
+            <span className={thread.author.role === "moderator" ? "font-semibold text-amber-400" : ""}>
+              {thread.author.name ?? "Anonymous"}
+            </span>
+            {thread.author.role === "moderator" && (
+              <span className="text-[10px] font-bold uppercase tracking-wider bg-amber-400/20 text-amber-400 px-1.5 py-0.5 rounded">
+                MOD
+              </span>
+            )}
           </span>
           <span>{timeAgo(thread.createdAt)}</span>
           <span className="flex items-center gap-1">

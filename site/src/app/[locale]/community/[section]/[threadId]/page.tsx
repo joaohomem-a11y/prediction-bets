@@ -170,9 +170,14 @@ export default function ThreadDetailPage() {
                 ) : (
                   <span className="w-5 h-5 rounded-full bg-pb-bg-surface-hover inline-block" />
                 )}
-                <span className="font-medium text-pb-text-secondary">
+                <span className={`font-medium ${thread.author.role === "moderator" ? "text-amber-400" : "text-pb-text-secondary"}`}>
                   {thread.author.name ?? "Anonymous"}
                 </span>
+                {thread.author.role === "moderator" && (
+                  <span className="text-[10px] font-bold uppercase tracking-wider bg-amber-400/20 text-amber-400 px-1.5 py-0.5 rounded">
+                    MOD
+                  </span>
+                )}
               </span>
               <span>{timeAgo(thread.createdAt)}</span>
             </div>

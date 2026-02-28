@@ -29,7 +29,7 @@ export default function ReplyCard({ reply, depth = 0, onReply }: Props) {
 
   return (
     <div
-      className={`${indent > 0 ? "border-l border-white/5" : ""}`}
+      className={`${indent > 0 ? "border-l border-white/5" : ""} ${reply.author.role === "moderator" ? "bg-amber-400/[0.03]" : ""}`}
       style={{ marginLeft: indent > 0 ? `${indent * 1.5}rem` : 0 }}
     >
       <div className="p-4 flex items-start gap-3">
@@ -50,9 +50,14 @@ export default function ReplyCard({ reply, depth = 0, onReply }: Props) {
               ) : (
                 <span className="w-4 h-4 rounded-full bg-pb-bg-surface-hover inline-block" />
               )}
-              <span className="font-medium text-pb-text-secondary">
+              <span className={`font-medium ${reply.author.role === "moderator" ? "text-amber-400" : "text-pb-text-secondary"}`}>
                 {reply.author.name ?? "Anonymous"}
               </span>
+              {reply.author.role === "moderator" && (
+                <span className="text-[10px] font-bold uppercase tracking-wider bg-amber-400/20 text-amber-400 px-1.5 py-0.5 rounded">
+                  MOD
+                </span>
+              )}
             </span>
             <span>{timeAgo(reply.createdAt)}</span>
           </div>
