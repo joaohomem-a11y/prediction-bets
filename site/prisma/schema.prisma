@@ -15,6 +15,7 @@ model User {
   image         String?
   password      String?
   provider      String?
+  role          String    @default("member")
   createdAt     DateTime  @default(now())
   updatedAt     DateTime  @updatedAt
 

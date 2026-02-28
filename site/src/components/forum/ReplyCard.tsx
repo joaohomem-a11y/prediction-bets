@@ -14,6 +14,7 @@ type ReplyData = {
     id: string;
     name: string | null;
     image: string | null;
+    role: string;
   };
 };
 

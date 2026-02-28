@@ -12,7 +12,7 @@ export async function GET(
   const replies = await prisma.reply.findMany({
     where: { threadId: id },
     include: {
-      author: { select: { id: true, name: true, image: true } },
+      author: { select: { id: true, name: true, image: true, role: true } },
       _count: { select: { childReplies: true } },
     },
     orderBy: { createdAt: "asc" },
@@ -77,7 +77,7 @@ export async function POST(
       parentReplyId: parentReplyId ?? null,
     },
     include: {
-      author: { select: { id: true, name: true, image: true } },
+      author: { select: { id: true, name: true, image: true, role: true } },
     },
   });
 

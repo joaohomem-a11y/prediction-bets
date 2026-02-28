@@ -15,6 +15,7 @@ type ThreadData = {
     id: string;
     name: string | null;
     image: string | null;
+    role: string;
   };
   _count: {
     replies: number;

@@ -18,7 +18,7 @@ type ReplyData = {
   downvotes: number;
   createdAt: string;
   parentReplyId: string | null;
-  author: { id: string; name: string | null; image: string | null };
+  author: { id: string; name: string | null; image: string | null; role: string };
   _count: { childReplies: number };
 };
 
@@ -30,7 +30,7 @@ type ThreadDetail = {
   upvotes: number;
   downvotes: number;
   createdAt: string;
-  author: { id: string; name: string | null; image: string | null };
+  author: { id: string; name: string | null; image: string | null; role: string };
   replies: ReplyData[];
   _count: { replies: number };
 };

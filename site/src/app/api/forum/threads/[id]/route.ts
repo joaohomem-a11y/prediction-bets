@@ -10,10 +10,10 @@ export async function GET(
   const thread = await prisma.thread.findUnique({
     where: { id },
     include: {
-      author: { select: { id: true, name: true, image: true } },
+      author: { select: { id: true, name: true, image: true, role: true } },
       replies: {
         include: {
-          author: { select: { id: true, name: true, image: true } },
+          author: { select: { id: true, name: true, image: true, role: true } },
           _count: { select: { childReplies: true } },
         },
         orderBy: { createdAt: "asc" },

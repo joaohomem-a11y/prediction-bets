@@ -48,7 +48,7 @@ export async function GET(request: NextRequest) {
     skip: (page - 1) * PAGE_SIZE,
     take: PAGE_SIZE,
     include: {
-      author: { select: { id: true, name: true, image: true } },
+      author: { select: { id: true, name: true, image: true, role: true } },
       _count: { select: { replies: true } },
     },
   });
@@ -96,7 +96,7 @@ export async function POST(request: NextRequest) {
       authorId: user.id,
     },
     include: {
-      author: { select: { id: true, name: true, image: true } },
+      author: { select: { id: true, name: true, image: true, role: true } },
     },
   });
 

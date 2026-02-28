@@ -15,7 +15,7 @@ type ThreadData = {
   upvotes: number;
   downvotes: number;
   createdAt: string;
-  author: { id: string; name: string | null; image: string | null };
+  author: { id: string; name: string | null; image: string | null; role: string };
   _count: { replies: number };
 };
 
