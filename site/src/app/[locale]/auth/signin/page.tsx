@@ -21,7 +21,7 @@ export default function SignInPage() {
         {/* Social providers */}
         <div className="flex flex-col gap-3 mb-6">
           <button
-            onClick={() => signIn("google", { callbackUrl: "/" })}
+            onClick={() => signIn("google", { callbackUrl: "/community" })}
             className="btn-secondary w-full gap-2"
           >
             <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
@@ -34,7 +34,7 @@ export default function SignInPage() {
           </button>
 
           <button
-            onClick={() => signIn("apple", { callbackUrl: "/" })}
+            onClick={() => signIn("apple", { callbackUrl: "/community" })}
             className="btn-secondary w-full gap-2"
           >
             <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
@@ -44,7 +44,7 @@ export default function SignInPage() {
           </button>
 
           <button
-            onClick={() => signIn("facebook", { callbackUrl: "/" })}
+            onClick={() => signIn("facebook", { callbackUrl: "/community" })}
             className="btn-secondary w-full gap-2"
           >
             <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
@@ -67,7 +67,7 @@ export default function SignInPage() {
         <form
           onSubmit={(e) => {
             e.preventDefault();
-            signIn("email", { email, callbackUrl: "/" });
+            signIn("email", { email, callbackUrl: "/community" });
           }}
           className="flex flex-col gap-3"
         >
