@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 import { getAllSlugs } from "@/lib/articles";
 
-const BASE_URL = "https://predictionbets.com";
+const BASE_URL = "https://predictionbets.club";
 const LOCALES = ["en", "pt", "es"];
 const CATEGORIES = [
   "politics",
