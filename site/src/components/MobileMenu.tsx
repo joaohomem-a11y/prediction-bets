@@ -1,5 +1,6 @@
 "use client";
 
+import { useSession, signOut } from "next-auth/react";
 import { useTranslations } from "next-intl";
 import { Link, usePathname } from "@/i18n/navigation";
 
@@ -24,6 +25,7 @@ interface MobileMenuProps {
 }
 
 export default function MobileMenu({ onClose }: MobileMenuProps) {
+  const { data: session } = useSession();
   const t = useTranslations("nav");
   const pathname = usePathname();
 
@@ -90,13 +92,40 @@ export default function MobileMenu({ onClose }: MobileMenuProps) {
 
         {/* CTA */}
         <div className="px-4 py-4">
-          <Link
-            href="/auth/signin"
-            onClick={onClose}
-            className="btn-primary w-full text-sm justify-center"
-          >
-            {t("joinTribe")}
-          </Link>
+          {session?.user ? (
+            <div className="flex items-center justify-between">
+              <div className="flex items-center gap-3">
+                {session.user.image ? (
+                  <img
+                    src={session.user.image}
+                    alt=""
+                    className="w-8 h-8 rounded-full"
+                  />
+                ) : (
+                  <div className="w-8 h-8 rounded-full bg-pb-accent-blue/20 flex items-center justify-center text-sm font-bold text-pb-accent-blue">
+                    {session.user.name?.charAt(0) ?? "?"}
+                  </div>
+                )}
+                <span className="text-sm font-medium text-pb-text-primary">
+                  {session.user.name}
+                </span>
+              </div>
+              <button
+                onClick={() => { signOut(); onClose(); }}
+                className="text-xs text-pb-text-muted hover:text-pb-text-primary transition-colors"
+              >
+                {t("signOut")}
+              </button>
+            </div>
+          ) : (
+            <Link
+              href="/auth/signin"
+              onClick={onClose}
+              className="btn-primary w-full text-sm justify-center"
+            >
+              {t("joinTribe")}
+            </Link>
+          )}
         </div>
       </nav>
     </div>

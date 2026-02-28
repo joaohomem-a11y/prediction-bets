@@ -13,7 +13,8 @@
     "about": "Acerca de",
     "newsletter": "Newsletter",
     "signIn": "Iniciar Sesion",
-    "joinTribe": "Unete a la Tribu"
+    "joinTribe": "Unete a la Tribu",
+    "signOut": "Salir"
   },
   "home": {
     "hero": "La realidad vence a la opinion. Los mercados revelan la verdad.",
@@ -88,7 +89,8 @@
     "word_predictionMindset": "Prediction Mindset",
     "word_predictionMindset_def": "Pensar en probabilidades, no en certezas",
     "coreBeliefHeading": "La realidad vence a la opinion. Los mercados revelan la verdad.",
-    "joinTribe": "Unete a la Tribu"
+    "joinTribe": "Unete a la Tribu",
+    "signOut": "Salir"
   },
   "auth": {
     "signIn": "Iniciar Sesion",

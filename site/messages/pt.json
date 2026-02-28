@@ -13,7 +13,8 @@
     "about": "Sobre",
     "newsletter": "Newsletter",
     "signIn": "Entrar",
-    "joinTribe": "Entre na Tribo"
+    "joinTribe": "Entre na Tribo",
+    "signOut": "Sair"
   },
   "home": {
     "hero": "Realidade vence opiniao. Mercados revelam verdade.",
@@ -88,7 +89,8 @@
     "word_predictionMindset": "Prediction Mindset",
     "word_predictionMindset_def": "Pensar em probabilidades, nao em certezas",
     "coreBeliefHeading": "Realidade vence opiniao. Mercados revelam verdade.",
-    "joinTribe": "Entre na Tribo"
+    "joinTribe": "Entre na Tribo",
+    "signOut": "Sair"
   },
   "auth": {
     "signIn": "Entrar",

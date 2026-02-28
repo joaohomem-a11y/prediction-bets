@@ -13,7 +13,8 @@
     "about": "About",
     "newsletter": "Newsletter",
     "signIn": "Sign In",
-    "joinTribe": "Join the Tribe"
+    "joinTribe": "Join the Tribe",
+    "signOut": "Sign out"
   },
   "home": {
     "hero": "Reality beats opinion. Markets reveal truth.",
@@ -88,7 +89,8 @@
     "word_predictionMindset": "Prediction Mindset",
     "word_predictionMindset_def": "Thinking in probabilities, not certainties",
     "coreBeliefHeading": "Reality beats opinion. Markets reveal truth.",
-    "joinTribe": "Join the Tribe"
+    "joinTribe": "Join the Tribe",
+    "signOut": "Sign out"
   },
   "auth": {
     "signIn": "Sign In",

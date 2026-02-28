@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { useSession, signOut } from "next-auth/react";
 import { useTranslations } from "next-intl";
 import { Link, usePathname } from "@/i18n/navigation";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
@@ -18,6 +19,7 @@ const NAV_LINKS = [
 ] as const;
 
 export default function Header() {
+  const { data: session } = useSession();
   const t = useTranslations("nav");
   const pathname = usePathname();
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -70,12 +72,39 @@ export default function Header() {
                 {t("community")}
               </Link>
               <LanguageSwitcher />
-              <Link
-                href="/auth/signin"
-                className="btn-primary text-sm px-4 py-2"
-              >
-                {t("joinTribe")}
-              </Link>
+              {session?.user ? (
+                <div className="flex items-center gap-3">
+                  <Link href="/community" className="flex items-center gap-2">
+                    {session.user.image ? (
+                      <img
+                        src={session.user.image}
+                        alt=""
+                        className="w-8 h-8 rounded-full"
+                      />
+                    ) : (
+                      <div className="w-8 h-8 rounded-full bg-pb-accent-blue/20 flex items-center justify-center text-sm font-bold text-pb-accent-blue">
+                        {session.user.name?.charAt(0) ?? "?"}
+                      </div>
+                    )}
+                    <span className="text-sm font-medium text-pb-text-primary max-w-[120px] truncate">
+                      {session.user.name}
+                    </span>
+                  </Link>
+                  <button
+                    onClick={() => signOut()}
+                    className="text-xs text-pb-text-muted hover:text-pb-text-primary transition-colors"
+                  >
+                    {t("signOut")}
+                  </button>
+                </div>
+              ) : (
+                <Link
+                  href="/auth/signin"
+                  className="btn-primary text-sm px-4 py-2"
+                >
+                  {t("joinTribe")}
+                </Link>
+              )}
             </div>
 
             {/* Mobile hamburger */}
