@@ -1,6 +1,8 @@
 import { getTranslations } from "next-intl/server";
+import { getServerSession } from "next-auth";
 import { Link } from "@/i18n/navigation";
 import { FORUM_SECTIONS } from "@/lib/forum";
+import { authOptions } from "@/lib/auth";
 
 /** Fake preview threads to tease the community vibe */
 const PREVIEW_THREADS = [
@@ -74,7 +76,45 @@ export default async function CommunityPage({
 }) {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "community" });
+  const session = await getServerSession(authOptions);
 
+  /* ───── Logged-in: show the actual forum hub ───── */
+  if (session) {
+    return (
+      <main className="min-h-screen">
+        <section className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+          <h1 className="text-3xl sm:text-4xl font-bold text-pb-text-primary mb-2">
+            {t("title")}
+          </h1>
+          <p className="text-pb-text-secondary mb-8">
+            {t("landingSubtitle")}
+          </p>
+
+          <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+            {FORUM_SECTIONS.map((section) => (
+              <Link
+                key={section.slug}
+                href={`/community/${section.slug}`}
+                className="card p-5 flex items-start gap-3 hover:border-pb-accent-blue/30 transition-colors group"
+              >
+                <span className="text-2xl">{section.emoji}</span>
+                <div>
+                  <h3 className="font-semibold text-pb-text-primary group-hover:text-pb-accent-blue transition-colors">
+                    {t(`sections.${section.key}` as Parameters<typeof t>[0])}
+                  </h3>
+                  <p className="text-sm text-pb-text-muted mt-0.5">
+                    {section.description}
+                  </p>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </section>
+      </main>
+    );
+  }
+
+  /* ───── Not logged-in: landing page ───── */
   return (
     <main className="min-h-screen">
       {/* Hero */}
