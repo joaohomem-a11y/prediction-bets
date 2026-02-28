@@ -40,7 +40,7 @@ If you've ever wondered "What are prediction markets?" or seen screenshots of pe
 
 ## What Are Prediction Markets? (Think Stock Market Meets Sports Betting)
 
-A **prediction market** is essentially a specialized financial market where people buy and sell shares based on the outcome of future events. Instead of trading Apple stock, you're trading shares in "Will Donald Trump win the 2024 election?" or "Will inflation hit 5% by year-end?"
+A **prediction market** is essentially a specialized financial market where people buy and sell shares based on the outcome of real-world events. Instead of trading Apple stock, you're trading shares in questions like "Will inflation hit 5% by year-end?" — or, as was the case in 2024, "Will Donald Trump win the presidential election?"
 
 Here's the beautiful simplicity: if you think an event will happen, you buy "Yes" shares. If you think it won't, you buy "No" shares. When the event resolves, winning shares pay out $1.00, and losing shares become worthless.
 

@@ -29,7 +29,7 @@ subtitle: Pare de chutar o que 73% realmente significa — aprenda a decodificar
 
 # Como Ler Odds de Mercados de Previsão Como um Pro de Wall Street: Guia Completo para Interpretar Dados de Apostas
 
-Visualize isto: você está rolando o Polymarket e vê "Trump ganha eleição de 2024: 67%". Seu amigo te manda mensagem "Biden está em 33% — dinheiro fácil!" Mas peraí. O que esses números realmente significam? Eles são confiáveis? E mais importante: como você lê eles como alguém que sabe das coisas?
+Visualize isto: você estava rolando o Polymarket em 2024 e viu "Trump ganha eleição de 2024: 67%". Seu amigo te mandou mensagem "Biden está em 33% — dinheiro fácil!" Mas peraí. O que esses números realmente significavam? Eles eram confiáveis? E mais importante: como você lê eles como alguém que sabe das coisas?
 
 Se você já se sentiu perdido no mar de porcentagens e livros de ordens dos mercados de previsão, você não está sozinho. A diferença entre dar uma olhadinha casual nas odds e realmente entender dados de mercado é como a diferença entre checar a previsão do tempo e ler cartas meteorológicas. Ambos te dizem se vai chover, mas só um te ajuda a entender *por que* e *quão confiante você deveria estar*.
 
@@ -56,7 +56,7 @@ Em plataformas como Polymarket, clique em qualquer mercado e você verá:
 - **Volume**: Quantas cotas estão sendo negociadas
 - **Spread**: A diferença entre compras e vendas
 
-**Exemplo**: Digamos que você está olhando "ChatGPT-5 será lançado em 2024?" A manchete mostra 45%, mas o livro de ordens revela:
+**Exemplo**: Digamos que você estava olhando "ChatGPT-5 será lançado em 2024?" quando o mercado estava ativo. A manchete mostrava 45%, mas o livro de ordens revelava:
 - Maior oferta de compra: 42¢ (compradores acham 42% provável)
 - Menor oferta de venda: 47¢ (vendedores acham 47% provável)
 - Spread: 5¢

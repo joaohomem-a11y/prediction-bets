@@ -30,7 +30,7 @@ subtitle: How a quirky academic experiment survived scandals, regulation, and cr
 
 Picture this: It's 1988, and a group of finance professors at the University of Iowa just had a wild idea. What if they let people bet real money on election outcomes? Not in some smoky back room, but as a legitimate academic experiment. They called it the Iowa Electronic Markets, and they had no idea they were lighting the fuse on one of the most controversial — and accurate — forecasting tools ever created.
 
-Fast-forward 36 years, and prediction markets are having their biggest moment yet. Polymarket just processed over $3 billion in bets on the 2024 election, while platforms like Kalshi are making headlines for predicting everything from Federal Reserve decisions to Taylor Swift's next career move. But the path from Iowa's computer lab to today's prediction market boom is littered with scandals, shutdowns, and enough regulatory drama to fill a Netflix series.
+Fast-forward 36 years, and prediction markets had their biggest moment yet. In 2024, Polymarket processed over $3 billion in bets on the presidential election, while platforms like Kalshi made headlines for predicting everything from Federal Reserve decisions to Taylor Swift's next career move. But the path from Iowa's computer lab to the prediction market boom is littered with scandals, shutdowns, and enough regulatory drama to fill a Netflix series.
 
 Let's dive into the wild history of prediction markets — the story of how betting on the future became big business.
 

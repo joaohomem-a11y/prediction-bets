@@ -30,7 +30,7 @@ subtitle: Enquanto Wall Street treme, esse burocrata luta para deixar americanos
 
 *"Tome a pílula vermelha, Neo. Veja quão fundo vai a toca do coelho."*
 
-Só que em 2024, a pílula vermelha não está revelando a Matrix—está revelando que algum cara da CFTC vem silenciosamente detonando o muro regulatório que impedia americanos de apostar na realidade.
+Só que em 2024, a pílula vermelha não estava revelando a Matrix—estava revelando que algum cara da CFTC vinha silenciosamente detonando o muro regulatório que impedia americanos de apostar na realidade.
 
 Conheçam o burocrata que acidentalmente virou o Neo dos mercados preditivos.
 

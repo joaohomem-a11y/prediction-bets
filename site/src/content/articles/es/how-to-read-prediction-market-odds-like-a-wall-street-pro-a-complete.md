@@ -29,7 +29,7 @@ subtitle: Deja de adivinar qué significa realmente ese 73% — aprende a decodi
 
 # Cómo Leer las Cuotas de Mercados de Predicción Como un Pro de Wall Street: Guía Completa para Interpretar Datos de Apuestas
 
-Imagínate esto: Estás navegando por Polymarket y ves "Trump gana las elecciones 2024: 67%". Tu amigo te manda un mensaje "Biden está en 33% — ¡dinero fácil!" Pero espera. ¿Qué significan realmente estos números? ¿Son confiables? Y lo más importante, ¿cómo los lees como alguien que sabe lo que está haciendo?
+Imagínate esto: Estabas navegando por Polymarket en 2024 y viste "Trump gana las elecciones 2024: 67%". Tu amigo te mandó un mensaje "Biden está en 33% — ¡dinero fácil!" Pero espera. ¿Qué significaban realmente estos números? ¿Eran confiables? Y lo más importante, ¿cómo los lees como alguien que sabe lo que está haciendo?
 
 Si alguna vez te has sentido perdido en el mar de porcentajes y libros de órdenes en los mercados de predicción, no estás solo. La diferencia entre echarle un vistazo casual a las cuotas y realmente entender los datos de mercado es como la diferencia entre revisar el clima y leer gráficos meteorológicos. Ambos te dicen si va a llover, pero solo uno te ayuda a entender *por qué* y *qué tan confiado deberías estar*.
 
@@ -56,7 +56,7 @@ En plataformas como Polymarket, haz clic en cualquier mercado y verás:
 - **Volumen**: Cuántas acciones se están intercambiando
 - **Spread**: La brecha entre ofertas de compra y venta
 
-**Ejemplo**: Digamos que estás viendo "¿Se lanzará ChatGPT-5 en 2024?" El titular muestra 45%, pero el libro de órdenes revela:
+**Ejemplo**: Digamos que estabas viendo "¿Se lanzará ChatGPT-5 en 2024?" cuando el mercado estaba activo. El titular mostraba 45%, pero el libro de órdenes revelaba:
 - Oferta más alta: 42¢ (los compradores piensan que hay 42% de probabilidad)
 - Precio de venta más bajo: 47¢ (los vendedores piensan que hay 47% de probabilidad)
 - Spread: 5¢

@@ -40,7 +40,7 @@ Se você já se perguntou "O que são mercados de previsão?" ou viu prints de p
 
 ## O Que São Mercados de Previsão? (Pense Bolsa de Valores + Apostas Esportivas)
 
-Um **mercado de previsão** é basicamente um mercado financeiro especializado onde pessoas compram e vendem cotas baseadas no resultado de eventos futuros. Em vez de negociar ações da Apple, você está negociando cotas em "O Donald Trump vai ganhar a eleição de 2024?" ou "A inflação vai bater 5% até o fim do ano?"
+Um **mercado de previsão** é basicamente um mercado financeiro especializado onde pessoas compram e vendem cotas baseadas no resultado de eventos do mundo real. Em vez de negociar ações da Apple, você negocia cotas em perguntas como "A inflação vai bater 5% até o fim do ano?" — ou, como foi o caso em 2024, "O Donald Trump vai ganhar a eleição presidencial?"
 
 Aqui está a beleza da simplicidade: se você acha que um evento vai acontecer, você compra cotas "Sim". Se acha que não vai, compra cotas "Não". Quando o evento se resolve, as cotas vencedoras pagam $1,00, e as perdedoras viram pó.
 

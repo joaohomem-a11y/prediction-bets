@@ -31,7 +31,7 @@ subtitle: Como um experimento acadêmico excêntrico sobreviveu a escândalos, r
 
 Imaginem isso: É 1988, e um grupo de professores de finanças da Universidade de Iowa acabou de ter uma ideia maluca. E se eles deixassem as pessoas apostar dinheiro real nos resultados das eleições? Não em alguma sala obscura de fundos, mas como um experimento acadêmico legítimo. Eles chamaram de Iowa Electronic Markets, e não faziam ideia de que estavam acendendo o pavio de uma das ferramentas de previsão mais controversas — e precisas — já criadas.
 
-Avançando 36 anos, e os mercados de previsão estão tendo seu maior momento até agora. O Polymarket acabou de processar mais de US$ 3 bilhões em apostas na eleição de 2024, enquanto plataformas como Kalshi fazem manchetes prevendo desde decisões do Federal Reserve até o próximo movimento na carreira da Taylor Swift. Mas o caminho do laboratório de computação de Iowa até o boom atual dos mercados de previsão está cheio de escândalos, fechamentos e drama regulatório suficiente para encher uma série da Netflix.
+Avançando 36 anos, e os mercados de previsão tiveram seu maior momento até então. Em 2024, o Polymarket processou mais de US$ 3 bilhões em apostas na eleição presidencial, enquanto plataformas como Kalshi fizeram manchetes prevendo desde decisões do Federal Reserve até o próximo movimento na carreira da Taylor Swift. Mas o caminho do laboratório de computação de Iowa até o boom dos mercados de previsão está cheio de escândalos, fechamentos e drama regulatório suficiente para encher uma série da Netflix.
 
 Vamos mergulhar na história selvagem dos mercados de previsão — a história de como apostar no futuro virou um grande negócio.
 

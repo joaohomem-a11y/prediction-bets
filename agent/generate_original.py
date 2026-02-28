@@ -19,6 +19,7 @@ from __future__ import annotations
 import argparse
 import random
 import sys
+from datetime import datetime, timezone
 from typing import Any, Optional
 
 import anthropic
@@ -219,6 +220,12 @@ ARTICLE STRUCTURE:
 4. Cultural/historical references that reinforce your point
 5. Close with a challenge to the reader — make them think
 
+TEMPORAL AWARENESS — CRITICAL:
+- TODAY'S DATE: {today}. You are writing in {year}.
+- Past events (2024 election, etc.) = PAST TENSE with explicit year.
+- Future events must actually be in the future relative to {today}.
+- Double-check every date, number, and statistic. Remove any you're unsure about.
+
 LANGUAGE: Write in {language}.
 LENGTH: 800-1200 words. This is a serious opinion piece, not a hot take.
 OUTPUT: Return TITLE:, SUBTITLE:, EXCERPT:, the body, then TAGS: at the end.
@@ -260,6 +267,12 @@ ARTICLE STRUCTURE:
 3. Deep dive — break down the topic systematically with examples
 4. Practical takeaway — what the reader can DO with this knowledge
 5. Resources or next steps — where to go from here
+
+TEMPORAL AWARENESS — CRITICAL:
+- TODAY'S DATE: {today}. You are writing in {year}.
+- Past events (2024 election, etc.) = PAST TENSE with explicit year.
+- Future events must actually be in the future relative to {today}.
+- Double-check every date, number, and statistic. Remove any you're unsure about.
 
 LANGUAGE: Write in {language}.
 LENGTH: 1000-1800 words. This is a comprehensive educational piece.
@@ -304,10 +317,13 @@ class OriginalGenerator:
         """Generate an original article from a topic brief."""
         article_type = topic["type"]
 
+        now = datetime.now(tz=timezone.utc)
+        fmt = dict(language=language, today=now.strftime("%Y-%m-%d"), year=now.year)
+
         if article_type == "opinion":
-            system_prompt = _OPINION_SYSTEM_PROMPT.format(language=language)
+            system_prompt = _OPINION_SYSTEM_PROMPT.format(**fmt)
         else:
-            system_prompt = _EDUCATION_SYSTEM_PROMPT.format(language=language)
+            system_prompt = _EDUCATION_SYSTEM_PROMPT.format(**fmt)
 
         user_prompt = _USER_TEMPLATE.format(
             article_type=article_type,

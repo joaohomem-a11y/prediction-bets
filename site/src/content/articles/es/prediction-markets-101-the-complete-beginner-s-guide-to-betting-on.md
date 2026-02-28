@@ -41,7 +41,7 @@ Si alguna vez te has preguntado "¿Qué son los mercados de predicción?" o has 
 
 ## ¿Qué Son Los Mercados de Predicción? (Piensa Bolsa de Valores + Apuestas Deportivas)
 
-Un **mercado de predicción** es esencialmente un mercado financiero especializado donde la gente compra y vende acciones basadas en el resultado de eventos futuros. En lugar de negociar acciones de Apple, estás negociando acciones de "¿Ganará Donald Trump las elecciones de 2024?" o "¿La inflación llegará al 5% para fin de año?"
+Un **mercado de predicción** es esencialmente un mercado financiero especializado donde la gente compra y vende acciones basadas en el resultado de eventos del mundo real. En lugar de negociar acciones de Apple, estás negociando acciones de preguntas como "¿La inflación llegará al 5% para fin de año?" — o, como fue el caso en 2024, "¿Ganará Donald Trump las elecciones presidenciales?"
 
 Aquí está la bella simplicidad: si crees que un evento va a pasar, compras acciones de "Sí". Si crees que no pasará, compras acciones de "No". Cuando se resuelve el evento, las acciones ganadoras pagan $1.00, y las perdedoras se vuelven inútiles.
 

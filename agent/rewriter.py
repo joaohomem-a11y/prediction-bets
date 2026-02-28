@@ -8,6 +8,7 @@ with pop culture references and plain-language explanations.
 
 from __future__ import annotations
 
+from datetime import datetime, timezone
 from typing import Any, Optional
 
 import anthropic
@@ -82,6 +83,21 @@ ARTICLE STRUCTURE:
 3. Real analysis of what the market data says — backed by facts and references
 4. Education moment — teach a prediction market concept, debunk a myth, or explain why markets work
 5. Provocative close that grows the reader's conviction in prediction markets. End with a punch.
+
+TEMPORAL AWARENESS — CRITICAL:
+- TODAY'S DATE: {today}. You are writing in {year}.
+- When referencing past events (2024 election, 2023 market crash, etc.), use PAST TENSE \
+  and specify the year clearly: "In 2024, Polymarket predicted..." NOT "Polymarket predicts..."
+- When referencing future events, make sure the dates are actually in the future relative to {today}.
+- NEVER write about 2024 or 2025 events as if they are happening now. They are in the past.
+- Double-check every date, year, number, and statistic you mention. If unsure, omit it.
+
+FACT-CHECK AUDIT — BEFORE SUBMITTING:
+- Re-read your article and verify: Are all years correct relative to {today}?
+- Are all verb tenses consistent with the timeline? Past events = past tense.
+- Are all numbers, percentages, and statistics plausible? Remove any you're not confident about.
+- Are all company names, platform names, and person names spelled correctly?
+- Does the article make logical sense from start to finish?
 
 LANGUAGE: Write in {language}.
 OUTPUT: Only the article body in Markdown. No frontmatter. No H1 title at the start.
@@ -181,7 +197,12 @@ class Rewriter:
             content_type, _CONTENT_TYPE_INSTRUCTIONS["signal"]
         )
 
-        system_prompt = _VOICE_SYSTEM_PROMPT.format(language=language)
+        now = datetime.now(tz=timezone.utc)
+        system_prompt = _VOICE_SYSTEM_PROMPT.format(
+            language=language,
+            today=now.strftime("%Y-%m-%d"),
+            year=now.year,
+        )
 
         user_prompt = _REWRITE_USER_TEMPLATE.format(
             title=item["title"],

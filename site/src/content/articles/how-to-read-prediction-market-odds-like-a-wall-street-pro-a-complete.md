@@ -29,7 +29,7 @@ subtitle: Stop guessing what 73% really means — learn to decode prediction mar
 
 # How to Read Prediction Market Odds Like a Wall Street Pro: A Complete Guide to Interpreting Betting Data
 
-Picture this: You're scrolling through Polymarket and see "Trump wins 2024 election: 67%." Your friend texts you "Biden's at 33% — easy money!" But wait. What do these numbers actually mean? Are they reliable? And most importantly, how do you read them like someone who knows what they're doing?
+Picture this: You were scrolling through Polymarket in 2024 and saw "Trump wins 2024 election: 67%." Your friend texted you "Biden's at 33% — easy money!" But wait. What did these numbers actually mean? Were they reliable? And most importantly, how do you read them like someone who knows what they're doing?
 
 If you've ever felt lost in the sea of percentages and order books on prediction markets, you're not alone. The difference between casually glancing at odds and truly understanding market data is like the difference between checking the weather and reading meteorological charts. Both tell you if it'll rain, but only one helps you understand *why* and *how confident you should be*.
 
@@ -56,7 +56,7 @@ On platforms like Polymarket, click into any market and you'll see:
 - **Volume**: How many shares are being traded
 - **Spread**: The gap between bids and asks
 
-**Example**: Let's say you're looking at "Will ChatGPT-5 be released in 2024?" The headline shows 45%, but the order book reveals:
+**Example**: Let's say you were looking at "Will ChatGPT-5 be released in 2024?" back when the market was live. The headline showed 45%, but the order book revealed:
 - Highest bid: 42¢ (buyers think 42% likely)
 - Lowest ask: 47¢ (sellers think 47% likely)
 - Spread: 5¢

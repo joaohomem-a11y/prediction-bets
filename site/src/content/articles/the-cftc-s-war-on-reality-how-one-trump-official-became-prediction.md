@@ -29,7 +29,7 @@ subtitle: While Wall Street trembles, this bureaucrat is fighting to let America
 
 *"Take the red pill, Neo. See how deep the rabbit hole goes."*
 
-Except in 2024, the red pill isn't revealing the Matrix—it's revealing that some guy at the CFTC has been quietly bulldozing the regulatory wall that kept Americans from betting on reality.
+Except in 2024, the red pill wasn't revealing the Matrix—it was revealing that some guy at the CFTC had been quietly bulldozing the regulatory wall that kept Americans from betting on reality.
 
 Meet the bureaucrat who accidentally became prediction markets' Neo.
 

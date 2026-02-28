@@ -30,7 +30,7 @@ subtitle: Mientras Wall Street tiembla, este burócrata lucha para que los ameri
 
 *"Toma la pastilla roja, Neo. Mira qué tan profundo llega el hoyo del conejo."*
 
-Excepto que en 2024, la pastilla roja no está revelando la Matrix—está revelando que algún tipo en la CFTC ha estado silenciosamente arrasando con el muro regulatorio que impedía a los americanos apostar a la realidad.
+Excepto que en 2024, la pastilla roja no estaba revelando la Matrix—estaba revelando que algún tipo en la CFTC había estado silenciosamente arrasando con el muro regulatorio que impedía a los americanos apostar a la realidad.
 
 Conoce al burócrata que accidentalmente se convirtió en el Neo de los mercados de predicción.
 
