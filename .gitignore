@@ -8,3 +8,9 @@
 # env
 .env*
 !.env.example
+.vercel
+
+# Generated community data
+agent/personas.json
+agent/__pycache__/
+agent/.processed_urls.json
